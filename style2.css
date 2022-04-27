@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body,
+  h1,
+  p,
+  strong,
+  ul,
+  img {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1,
+  p {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+
+
+  body {
+    background-color: rgb(39, 39, 39);
+  }
+  
+  header {
+    position: relative;
+    background-image: url(./images/cover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 170px;
+  }
+  
+  header .txt-header {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  
+  header .txt-header,
+  header .txt-header-ps {
+    color: #fff;
+    text-align: center;
+    margin: 8px 0;
+  }
+  
+  header .txt-header {
+    font-size: 12px;
+    transform: translate(-57%, -160%);
+  }
+  
+  header .txt-header-ps {
+    font-size: 16px;
+    letter-spacing: 0.3em;
+  }
+  
+  .txt-header-ps::before {
+    content: '';
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 180px;
+    margin-left: -3px;
+    border: 1px solid;
+    color: dodgerblue;
+    z-index: 10;
+  }
+  
+
+  /* body  */
+  main {
+    position: relative;
+    width: 800px;
+    margin: 100px auto;
+  }
+  
+  main::after {
+    content: '';
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    border: 1px solid dodgerblue;
+    height: 100%;
+    color: dodgerblue;
+  }
+  
+  .container li {
+    position: relative;
+    padding: 20px;
+    margin-top: -20px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+  }
+  
+  .container .img-ps {
+    width: 5em;
+    position: absolute;
+    margin-top: -60px;
+  }
+  
+  .container .txt-year {
+    display: block;
+    font-size: 3em;
+    color: dodgerblue;
+  }
+  
+  .container .txt-ver {
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .container .txt-info {
+    background-color: black;
+    width: 100%;
+    margin-bottom: -20px;
+    padding: 16px 0 16px 10px;
+    border-radius: 20px 20px 0 0;
+    font-size: 10px;
+    color: #9d9d9d;
+  }
+  
+  .container li:nth-child(odd) {
+    margin-right: 420px;
+  }
+  
+  .container li:nth-child(odd) .txt-year,
+  .container li:nth-child(odd) .txt-ver {
+    text-align: right;
+  }
+  
+  .container li:nth-child(odd)::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -6px;
+    width: 15px;
+    height: 15px;
+    transform: translateY(-50%) rotate(45deg);
+    background-color: rgb(20, 20, 20);
+    z-index: -10;
+  }
+  
+  .container li:nth-child(odd)::after {
+    content: '';
+    position: absolute;
+    top: 48%;
+    right: -25.5px;
+    width: 5px;
+    height: 5px;
+    border: 2px solid dodgerblue;
+    border-radius: 50%;
+    background-color: rgb(39, 39, 39);
+    z-index: 10;
+  }
+  
+  .container li:nth-child(even) {
+    margin-left: 420px;
+  }
+  
+  .container li:nth-child(even) .img-ps {
+    right: 10px;
+  }
+  
+  .container li:nth-child(even) .txt-year,
+  .container li:nth-child(even) .txt-ver {
+    text-align: left;
+  }
+  
+  .container li:nth-child(even)::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -6px;
+    width: 15px;
+    height: 15px;
+    transform: translateY(-50%) rotate(45deg);
+    background-color: rgb(20, 20, 20);
+    z-index: -10;
+  }
+  
+  .container li:nth-child(even)::after {
+    content: '';
+    position: absolute;
+    top: 48%;
+    left: -23.5px;
+    width: 5px;
+    height: 5px;
+    border: 2px solid dodgerblue;
+    border-radius: 50%;
+    background-color: rgb(39, 39, 39);
+    z-index: 10;
+  }
